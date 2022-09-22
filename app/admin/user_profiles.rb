@@ -5,13 +5,13 @@ ActiveAdmin.register UserProfile do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :user_id, :bio, :dob, :profile_photo
+  permit_params :user_id.name, :bio, :dob, :profile_photo
 
 
 
 
 index do 
-    column :user_id
+    column :user_id.name
     column :bio
     column :dob
     column "Image" do |product|
